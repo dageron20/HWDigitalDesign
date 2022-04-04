@@ -1,0 +1,55 @@
+@import '../colors';
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img,
+.img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.no-img img{
+    max-width: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 46px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    min-height: 1020px;
+}
+
