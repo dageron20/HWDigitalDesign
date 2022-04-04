@@ -1,0 +1,13 @@
+@import '../colors';
+
+.menu {
+    &__iconTweet {
+        fill: $primary;
+    }
+    &--logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
