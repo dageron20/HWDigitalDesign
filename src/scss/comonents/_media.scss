@@ -6,8 +6,6 @@
     }
 
     .slider {
-        min-height: 495px;
-        max-height: 400px !important;
         &__tab {
             &--desc {
                 display: none;
@@ -86,7 +84,6 @@
     }
 
     .slider {
-        min-height: 440px !important;
         &__item {
             justify-content: flex-end !important;
 
@@ -107,6 +104,17 @@
         &__tab {
             display: none !important;
         }
+    }
+
+    .arrows-container {
+        display: block !important;
+        &__item {
+            display: block !important;
+        }
+    }
+
+    .second-block {
+        margin-bottom: 0 !important;
     }
 
     .subs {
