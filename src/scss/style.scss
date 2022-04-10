@@ -73,16 +73,26 @@
 //  ----------- START SLIDER ----------- 
 
 .slider {
-    max-width: 896px;
-    max-height: 530px;
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
     #item_one {
         background-image: url('../img/baner.svg');
+    }
+    #item_two {
+        background-image: url('../img/2.jpg');
+    }
+    #item_three {
+        background-image: url('../img/3.jpg');
+    }
+    #item_foo {
+        background-image: url('../img/4.jpg');
     }
     &__item {
         background-size: cover;
         background-repeat: no-repeat;
-        max-width: 896px;
+        width: 100%;
         max-height: 445px;
         min-height: 445px;
         height: 100%;
@@ -170,6 +180,30 @@
         }
     }
 }
+
+.active {
+    background-color: #D9EFEC;
+    color: #34ACA7;
+}
+
+.arrows-container__item {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    border: none;
+    background: none;
+    font-size: 24px;
+    outline: none;
+    cursor: pointer;
+  }
+  .left-btn {
+    left: 10px;
+  }
+  .rigth-btn {
+    right: 10px;
+  }
 
 
 
