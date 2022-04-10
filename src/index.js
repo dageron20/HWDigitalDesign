@@ -5,7 +5,6 @@ var slideIndex = 1;
 const prevBtn = document.querySelector('.left-btn');
 const nextBtn = document.querySelector('.rigth-btn');
 
-
 showSlides(slideIndex);
 
 function showSlides(n) {
@@ -41,18 +40,17 @@ nextBtn.addEventListener("click", function onclick() {
     plusSlides(+1);
 })
 
-dotsArea.addEventListener("click", function onclick(event) {
-    for(let i = 0; i < dots.length + 1; i++) {  
-        if (event.target.classList.contains('slider__tab--item')  && event.target === dots[i - 1]) {
-            currentSlide(i);
-        }
-    }
-})
-
-  setInterval(function(){    
+for (let i = 0; i < dots.length; i++){
+    dots[i].addEventListener("click", function onclick() {
+        currentSlide(i + 1);
+}
+)}
+    
+setInterval(function(){    
     currentSlide(slideIndex)
     slideIndex++;
     if(slideIndex > slides.length)
     { slideIndex = 1;  }
 },3000)
+
 
