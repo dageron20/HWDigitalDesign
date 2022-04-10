@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     max-width: 140px;
-    margin-right: 44px;
 
     &__items {
         display: flex;
@@ -90,16 +89,13 @@
         background-position: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-end;
 
-        & .hidden-block {
-            visibility: hidden;
-            height: 80px;
-        }
 
         & .second-block {
             display: flex;
             flex-direction: column;
+            margin-bottom: 60px;
         }
 
         &--uptext {
@@ -114,6 +110,7 @@
             height: 50px;
             background-color: $white;
             padding-left: 20px;
+            box-sizing: border-box;
         }
 
         &--bottext {
@@ -129,6 +126,7 @@
             height: 42px;
             background-color: $dark;
             padding-left: 20px;
+            box-sizing: border-box;
         }
     }
 
@@ -208,6 +206,7 @@
         input {
             width: 100%;
             min-width: 160px;
+            max-width: 160px;
             height: 22px;
             border: 1px solid $smokie;
             color: #E5E5E5;
@@ -315,7 +314,6 @@
     flex-direction: row;
     margin-top: 41px;
     padding: 0 20px;
-    width: 100%;
     height: 92px;
     justify-content: space-between;
     align-items: center;
