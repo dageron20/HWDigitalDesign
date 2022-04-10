@@ -162,6 +162,10 @@ img,
     display: none !important;
   }
 
+  .second-block {
+    margin-bottom: 0;
+  }
+
   .subs__form {
     flex-wrap: wrap;
   }
