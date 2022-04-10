@@ -41,13 +41,17 @@ prevBtn.addEventListener("click", function onclick() {
 nextBtn.addEventListener("click", function onclick() {
   plusSlides(+1);
 });
-dotsArea.addEventListener("click", function onclick(event) {
-  for (var i = 0; i < dots.length + 1; i++) {
-    if (event.target.classList.contains('slider__tab--item') && event.target === dots[i - 1]) {
-      currentSlide(i);
-    }
-  }
-});
+
+var _loop = function _loop(i) {
+  dots[i].addEventListener("click", function onclick() {
+    currentSlide(i + 1);
+  });
+};
+
+for (var i = 0; i < dots.length; i++) {
+  _loop(i);
+}
+
 setInterval(function () {
   currentSlide(slideIndex);
   slideIndex++;
